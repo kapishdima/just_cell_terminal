@@ -1,5 +1,5 @@
-@import 'fonts';
-@import 'variables';
+@import "fonts";
+@import "variables";
 
 * {
   padding: 0;
@@ -10,4 +10,228 @@
 body {
   font-family: $font-primary;
   overflow-x: hidden;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fafafa;
+  width: 770px;
+  height: 1130px;
+}
+.loading {
+  margin: 32px 0px 48px 0px;
+}
+.orange {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.18px;
+
+  color: #ff7a2e;
+}
+.head-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 672px;
+  margin-bottom: 32px;
+}
+.check-input {
+  position: absolute;
+  appearance: none;
+}
+.check-input:checked + .check-box {
+  background-color: black;
+  background-image: url(../assets/images/checkbox-empty.svg);
+}
+.check-box {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  background-color: red;
+  background-image: url(../assets/images/checkbox-checked.svg);
+}
+
+.check-option {
+  display: flex;
+  height: 26px;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 122, 46, 0.15);
+}
+.option:nth-last-child(1) {
+  border: 0px;
+}
+.value input {
+  height: 24px;
+}
+.key {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 2px;
+  margin-right: 11px;
+}
+.key-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.option {
+  width: 672px;
+  max-height: 52px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 122, 46, 0.15);
+}
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+.bottom-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 672px;
+  margin-top: 32px;
+}
+
+.link {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration-line: underline;
+  color: #ff7a2e;
+}
+
+// MODAL
+
+.modal-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 12px;
+  width: 441px;
+  height: 456px;
+  background: #ffffff;
+  border: 1px solid #ff7a2e;
+  border-radius: 8px;
+}
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.modal-title {
+  font-size: 18px;
+  line-height: 24px;
+  align-self: center;
+  letter-spacing: 0.18px;
+  color: #000000;
+}
+.modal-btn {
+  align-self: center;
+  padding: 6px 10px;
+  width: 125px;
+  height: 34px;
+  background: #2f9f2c;
+  border-radius: 8px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  border: 0px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.modal-tech-info {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.18px;
+  color: #000000;
+}
+.second-modal-wrapper {
+  height: 635px;
+}
+.qrcode {
+  width: 167px;
+  height: 167px;
+  align-self: center;
+}
+@media (max-width: 360px) {
+  .modal-wrapper {
+    font-size: 12px;
+    padding: 12px;
+    min-width: 256px;
+    max-width: 360px;
+  }
+  .modal-tech-info {
+    font-size: 14px;
+  }
+  .second-modal-wrapper {
+    height: 536px;
+  }
+  .qrcode {
+    width: 114px;
+    height: 114px;
+  }
+  .wrapper {
+    width: 360px;
+    height: 568px;
+  }
+  .logo {
+    width: 100px;
+  }
+  .loading {
+    text-align: center;
+    margin: 20px 0px 8px 0px;
+  }
+  .key {
+    font-size: 12px;
+  }
+  .value {
+    font-size: 12px;
+  }
+  .option {
+    width: 328px;
+  }
+  .head-wrapper {
+    width: 328px;
+    gap: 4px;
+    margin-bottom: 10px;
+  }
+  .main-wrapper {
+    width: 328px;
+    gap: 2px;
+  }
+  .bottom-wrapper {
+    width: 328px;
+  }
+  .link {
+    font-size: 12px;
+  }
+  .check-box {
+    width: 16px;
+    height: 16px;
+  }
 }

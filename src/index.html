@@ -1,14 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Just Cell</title>
 
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-  </head>
-  <body>
-    <h1>Just Cell</h1>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Just Cell</title>
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="loading">
+      <img class="logo" src="./assets/images/justsell-logo.png" alt="JustSell logotype">
+      <p class="orange">Server is running...</p>
+    </div>
+    <div class="head-wrapper">
+      <label class="check-option">
+        <span class="key">Тільки локальні запити:</span><input class="value check-input" type="checkbox" name="" id="">
+        <span class="check-box"></span>
+      </label>
+      <label class="check-option">
+        <span class="key">Тестові транзакції:</span><input class="value check-input" type="checkbox" checked name=""
+          id="">
+        <span class="check-box"></span>
+      </label>
+    </div>
+    <div class="main-wrapper">
+      <div class="option">
+        <div class="key-wrapper">
+          <img class="icon" src="./assets/images/terminal-icon.svg" alt="">
+          <span class="key">ID терміналу:</span>
+        </div>
+        <span class="value">74645375900</span>
+      </div>
+      <div class="option">
+        <div class="key-wrapper">
+          <img class="icon" src="./assets/images/oflineWork-icon.svg" alt="">
+          <span class="key">Робота оффлайн:</span>
+        </div>
+        <span class="value">ТАК</span>
+      </div>
+      <div class="option">
+        <div class="key-wrapper">
+          <img class="icon" src="./assets/images/maxTrans-icon.svg" alt="">
+          <span class="key">Максимальна сума транзакції в оффлайн, <br>
+            в копійках</span>
+        </div>
+        <span class="value">10000</span>
+      </div>
+      <div class="option">
+        <div class="key-wrapper">
+          <img class="icon" src="./assets/images/card-icon.svg" alt="">
+          <span class="key">Будь-яка карта може прийматися в оффлайні</span>
+        </div>
+        <span class="value">ТАК</span>
+      </div>
+      <div class="option">
+        <div class="key-wrapper">
+          <img class="icon" src="./assets/images/fixPrice-icon.svg" alt="">
+          <span class="key">Перелік фіксованих сум, в копійках</span>
+        </div>
+        <span class="value">1000, 3000, 5000</span>
+      </div>
+      <div class="option">
+        <div class="key-wrapper">
+          <img class="icon" src="./assets/images/time-icon.svg" alt="">
+          <span class="key">Частота синхронізації з сервером, в секундах</span>
+        </div>
+        <span class="value">600</span>
+      </div>
+      <div class="option">
+        <div class="key-wrapper">
+          <img class="icon" src="./assets/images/file-icon.svg" alt="">
+          <span class="key">Необхідне відкриття зміни</span>
+        </div>
+        <span class="value">НІ</span>
+      </div>
+      <div class="option">
+        <div class="key-wrapper">
+          <img class="icon" src="./assets/images/fluenTime-icon.svg" alt="">
+          <span class="key">Час очікування карти, в секундах</span>
+        </div>
+        <span class="value">30</span>
+      </div>
+      <div class="option">
+        <div class="key-wrapper">
+          <img class="icon" src="./assets/images/libVersion-icon.svg" alt="">
+          <span class="key">Версія бібліотеки:</span>
+        </div>
+        <span class="value">1.1.2</span>
+      </div>
+    </div>
+    <div class="bottom-wrapper">
+      <div class="option">
+        <span class="key">Чек:</span><a class="link" href="#">ПЕРЕГЛЯНУТИ</a>
+      </div>
+    </div>
+  </div>
+  <div class="modal-wrapper">
+    <h2 class="modal-title">Чек</h2>
+    <div class="modal-content">
+      <div class="modal-about">
+        <p>Україна <br>
+          м. Львів <br>
+          КП “ЛЬВІВЕЛЕКТРОТРАНС” <br>
+          КВИТОК НА ПРОЇЗД <br>
+          В МІСЬКОМУ ТРАНСПОРТІ</p>
+      </div>
+      <div class="modal-tech-info">
+        <p class="modal-info">ВАРТІСТЬ: $(AMOUNT) ГРН </p>
+        <p class="modal-info">КВИТОК №: $(TICKNUM)</p>
+        <p class="modal-info">$ (DATETIME)</p>
+        <p class="modal-info">СТАТУС: ВАЛІДОВАНО</p>
+        <p class="modal-info">МАРШРУТ №: $ (ROUTENUMBER)</p>
+        <p class="modal-info">ТЗ №: $ (VEHICLENUM)</p>
+      </div>
+      <div class="modal-operator">
+        <p>Оператор: ТОВ “ІЗІ СОФТ” <br>
+          ТЕЛ: 0800603003</p>
+      </div>
+    </div>
+    <button class="modal-btn">ОК</button>
+  </div>
+  <div class="modal-wrapper second-modal-wrapper">
+    <h2 class="modal-title">Чек</h2>
+    <div class="modal-content">
+      <div class="modal-about">
+        <p>Україна <br>
+          м. Львів <br>
+          КП “ЛЬВІВЕЛЕКТРОТРАНС” <br>
+          КВИТОК НА ПРОЇЗД <br>
+          В МІСЬКОМУ ТРАНСПОРТІ</p>
+      </div>
+      <div class="modal-tech-info">
+        <p class="modal-info">ВАРТІСТЬ: $(AMOUNT) ГРН </p>
+        <p class="modal-info">КВИТОК №: $(TICKNUM)</p>
+        <p class="modal-info">$ (DATETIME)</p>
+        <p class="modal-info">СТАТУС: ВАЛІДОВАНО</p>
+        <p class="modal-info">МАРШРУТ №: $ (ROUTENUMBER)</p>
+        <p class="modal-info">ТЗ №: $ (VEHICLENUM)</p>
+      </div>
+      <div class="modal-operator">
+        <p>Оператор: ТОВ “ІЗІ СОФТ” <br>
+          ТЕЛ: 0800603003</p>
+      </div>
+      <img src="./assets/images/qrcode.png" alt="" class="qrcode">
+    </div>
+    <button class="modal-btn">ОК</button>
+  </div>
+</body>
+
 </html>
